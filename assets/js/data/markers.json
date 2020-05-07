@@ -1,0 +1,202 @@
+[{
+        "lat": -34.5939,
+        "lng": -58.4427,
+        "name": "Mandrágora Libros y Cultura",
+        "description": "La librería más bella de VC",
+        "address": "Vera 1906",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería y Café"
+    },
+    {
+        "lat": -34.6009,
+        "lng": -58.4401,
+        "name": "Librería Rodríguez Villa Crespo",
+        "description": "La 2da mejor librería de VC",
+        "address": "Vera 1906",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    },
+    {
+        "lat": -34.6061,
+        "lng": -58.4277,
+        "name": "Librería Rodríguez Almagro",
+        "description": "Alta librería",
+        "address": "Vera 1906",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    },
+    {
+        "lat": -34.5868,
+        "lng": -58.4298,
+        "name": "Libros del Pasaje",
+        "description": "Hermoso café",
+        "address": "Vera 1906",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería y Café"
+    },
+    {
+        "lat": -34.5844,
+        "lng": -58.4361,
+        "name": "Eterna Cadencia",
+        "description": "Hermosa librería y café de la editorial",
+        "address": "Vera 1906",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería y Café"
+    },
+    {
+        "lat": -34.6183,
+        "lng": -58.3747,
+        "name": "Walrus Books",
+        "description": "Libros usados en inglés",
+        "address": "Vera 1906",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    },
+    {
+        "lat": -34.6197,
+        "lng": -58.3739,
+        "name": "Fedro Libros",
+        "description": "Librería y Disquería",
+        "address": "Vera 1906",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería y Disquería"
+    },
+    {
+        "lat": -34.5959,
+        "lng": -58.3942,
+        "name": "Ateneo Grand Splendid",
+        "description": "La librería más grande de latinoamérica",
+        "address": "Vera 1906",
+        "category": "Comercial",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería Café y Disquería"
+    },
+    {
+        "lat": -34.5747,
+        "lng": -58.4524,
+        "name": "Céspedes Libros",
+        "description": "La mejor librería de Colegiales",
+        "address": "Vera 1906",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    },
+    {
+        "lat": -34.5957,
+        "lng": -58.3915,
+        "name": "Waldhuter La Librería",
+        "description": "Editorial, distribuidora y librería",
+        "address": "Vera 1906",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    },
+    {
+        "lat": -34.6060,
+        "lng": -58.3863,
+        "name": "Ediciones La Parte Maldita",
+        "description": "Uruguay 239. 8vo B",
+        "address": "Vera 1906",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    },
+
+    {
+        "lat": -34.5982,
+        "lng": -58.4411,
+        "name": "Gould",
+        "description": "Librería en Villa Crespo",
+        "address": "Acevedo 388",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    },
+    {
+        "lat": -34.5982,
+        "lng": -58.4442,
+        "name": "La Internacional Argentina",
+        "description": "Librería ",
+        "address": "Padilla 865",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    },
+    {
+        "lat": -34.6185,
+        "lng": -58.4375,
+        "name": "Cúspide Libros",
+        "description": "En Village Caballito",
+        "address": "Av. Rivadavia 5045",
+        "category": "Comercial",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    },
+    {
+        "lat": -34.6031,
+        "lng": -58.4103,
+        "name": "Yenny",
+        "description": "Yenny Abasto",
+        "address": "Av. Corrientes 3247",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería y Disquería"
+    },
+    {
+        "lat": -34.6137,
+        "lng": -58.3749,
+        "name": "Witolda Libros",
+        "description": "Editorial Ilustración",
+        "address": "Venezuela 615",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    },
+    {
+        "lat": -34.5897,
+        "lng": -58.4362,
+        "name": "La Casa del Árbol",
+        "description": "Uruguay 239. 8vo B",
+        "address": "Av. Córdoba 5217",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería y Disquería"
+    },
+    {
+        "lat": -34.5890,
+        "lng": -58.4258,
+        "name": "Librería del Fondo",
+        "description": "Uruguay 239. 8vo B",
+        "address": "Costa Rica 4568",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    },
+    {
+        "lat": -34.5985,
+        "lng": -58.4351,
+        "name": "El Libro de Arena",
+        "description": "Libros ilustrados",
+        "address": "Aráoz 594",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    },
+    {
+        "lat": -34.6103,
+        "lng": -58.3733,
+        "name": "Librería de Ávila",
+        "description": "Histórica librería porteña",
+        "address": "Alsina 500",
+        "category": "Independiente",
+        "horarios": "10:00 - 20:00",
+        "type": "Librería"
+    }
+]

@@ -1,0 +1,30 @@
+{
+  "name": "vanilla-js-map-librerias",
+  "version": "1.0.0",
+  "description": "Frontend del Trabajo Práctico II",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dieguito711/vanilla-js-map-librerias.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dieguito711/vanilla-js-map-librerias/issues"
+  },
+  "homepage": "https://github.com/dieguito711/vanilla-js-map-librerias#readme",
+  "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/runtime": "^7.9.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "cssnano": "^4.1.10"
+  }
+}
