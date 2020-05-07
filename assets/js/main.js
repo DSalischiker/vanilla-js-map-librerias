@@ -97,8 +97,8 @@ const addMarker = (map, marker) => {
     };
     const markerItem = new google.maps.Marker({
         position: {
-            lat,
-            lng
+            lat: parseFloat(lat),
+            lng: parseFloat(lng)
         },
         icon: icons[type],
         map: map,
