@@ -79,12 +79,15 @@ const addMarker = (map, marker) => {
         horarios,
         type
     } = marker;
-    const contentString = `<div><h2>${name}</h2>
-    <h3>${type}</h3>
-    <p>${description}</p>
-    <p>Categoría: ${category}</p>
-    <p>Dirección: ${address}</p>
-    <p>Horarios: ${horarios}</p>
+    const contentString = `<div id='infowindow'>
+    <div id='infowindow_header'>
+    <h2 id='infowindow_name'>${name}</h2>
+    </div>
+    <h3 id='infowindow_type'>${type}</h3>
+    <p id='infowindow_desc'>${description}</p>
+    <p id='infowindow_cat'>Categoría: ${category}</p>
+    <p id='infowindow_address'>Dirección: ${address}</p>
+    <p id='infowindow_hor'>Horarios: ${horarios}</p>
     </div>`;
     const infoWindow = new google.maps.InfoWindow({
         content: contentString

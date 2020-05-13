@@ -7,7 +7,7 @@
 }
 
 header {
-    height: 75px;
+    height: 10vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -22,13 +22,14 @@ header {
 }
 
 body {
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
 
 #map {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 
 #title {
@@ -73,4 +74,62 @@ body {
 
 .option:hover {
     background-color: #333;
+}
+
+/* Contenidos infowindow */
+#infowindow {
+    width: 100%;
+    height: 100%;
+    color: #eee;
+}
+
+#infowindow_header {
+    padding: 1em;
+
+    border-radius: 8px 8px 0 0;
+    background-color: #352A2A;
+}
+
+
+
+#infowindow_name {
+
+    font-size: 16px;
+    font-weight: 800;
+
+}
+
+#infowindow_type {
+    padding: 1em;
+    font-size: 12px;
+
+    background-color: #B23334;
+
+}
+
+#infowindow_desc {
+    padding: 1em;
+    font-size: 12px;
+    background-color: #EBA73B;
+
+}
+
+#infowindow_cat {
+    padding: 1em;
+    font-size: 12px;
+    background-color: #8DB433;
+}
+
+#infowindow_address {
+    padding: 1em;
+    font-size: 12px;
+    background-color: #3F94B6;
+}
+
+#infowindow_hor {
+    font-size: 12px;
+    padding: 1em;
+    color: #222;
+    border-radius: 0 0 8px 8px;
+    background-color: #eee;
 }
