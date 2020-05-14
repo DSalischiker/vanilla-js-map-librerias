@@ -175,7 +175,7 @@ body {
     header {
         flex-direction: column;
         height: 15vh;
-        align-items: flex-start;
+
     }
 
     #h1 {
