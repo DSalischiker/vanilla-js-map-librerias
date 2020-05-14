@@ -170,3 +170,19 @@ body {
     border-radius: 0 0 8px 8px;
     background-color: #eee;
 }
+
+@media(max-width: 800px) {
+    header {
+        flex-direction: column;
+        height: 15vh;
+        align-items: flex-start;
+    }
+
+    #h1 {
+        justify-content: start;
+    }
+
+    #menu_container {
+        margin: 0;
+    }
+}
