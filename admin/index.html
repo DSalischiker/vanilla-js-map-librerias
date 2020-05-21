@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="h1">
+            <div id="color1" class="color"></div>
+            <div id="color2" class="color"></div>
+            <div id="color3" class="color"></div>
+            <div id="color4" class="color"></div>
+            <div id="color5" class="color"></div>
+            <div id="color6" class="color"></div>
+            <h1 id="title">
+                La ciudad de las librerías
+            </h1>
+        </div>
+    </header>
+    <main>
+        <section class="hero is-light">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        Admin
+                    </h1>
+                    <h2 class="subtitle">
+                        Dashboard
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <div id="wrapper">
+            <div class="inner">
+                <div id="form_wrapper">
+                    <form action="">
+                        <input id="form_field_lat" type="text" name="lat">
+                        <input id="form_field_lng" type="text" name="lng">
+                        <input id="form_field_name" type="text" name="name">
+                        <input id="form_field_description" type="text" name="description">
+                        <input id="form_field_address" type="text" name="address">
+                        <input id="form_field_category" type="text" name="category">
+                        <input id="form_field_horarios" type="text" name="horarios">
+                        <input id="form_field_type" type="text" name="type">
+                        <!-- EDIT FORM -->
+                        <!-- <section id="edit_info_form">
+                            <div id="form" class="field">
+                                <label class="label">Librería</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Ingrese el nombre de la librería">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Tipo de comercio</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select>
+                                            <option>Seleccione un tipo</option>
+                                            <option>Librería</option>
+                                            <option>Librería y Café</option>
+                                            <option>Librería y Disquería</option>
+                                            <option>Librería, Café y Disquería</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="form" class="field">
+                                <label class="label">Descripción</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Ingrese una breve descripción">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Categoría</label>
+                                <div class="control">
+                                    <label class="radio">
+                                        <input type="radio" name="question">
+                                        Independiente
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="question">
+                                        Comercial
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="form" class="field">
+                                <label class="label">Dirección</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Ingrese la dirección">
+                                </div>
+                            </div>
+                            <div id="form" class="field">
+                                <label class="label">Horarios</label>
+                                <div class="control">
+                                    <input class="input" type="text"
+                                        placeholder="Ingrese los horarios. (Formato: xx:xx - xx:xx)">
+                                </div>
+                            </div>
+
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="button has-background-dark has-text-white-bis">Modificar</button>
+                                </div>
+                                <div class="control">
+                                    <button class="button has-background-grey-lighter is-light">Cancelar</button>
+                                </div>
+                            </div>
+                        </section> -->
+                    </form>
+                </div>
+                <div id="btn_add_wrapper">
+                    <a href="#" class="btn blue">Buscar</a>
+                </div>
+                <div id="list">
+                    <!-- <div class="item">
+                        <div class="list_content">
+                            <h2>Título1</h2>
+                        </div>
+                        <div class="btn_wrapper">
+                            <a href="#" class="btn green">Editar</a>
+                            <a href="#" class="btn red">Eliminar</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../utils/api.js"></script>
+    <script src="../assets/js/admin.js"></script>
+</body>
+
+</html>
