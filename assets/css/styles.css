@@ -231,3 +231,12 @@ body {
     padding-bottom: 1em;
     margin-bottom: 1em;
 }
+
+#form_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control {
+    width: 50%;
+}

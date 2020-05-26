@@ -39,20 +39,42 @@
         </section>
         <div id="wrapper">
             <div class="inner">
-                <div id="form_wrapper">
-                    <form id="form_main">
-                        <input id="form_field_id" type="hidden" name="id">
-                        <input id="form_field_lat" type="text" name="lat">
-                        <input id="form_field_lng" type="text" name="lng">
-                        <input id="form_field_name" type="text" name="name">
-                        <input id="form_field_description" type="text" name="description">
-                        <input id="form_field_address" type="text" name="address">
-                        <input id="form_field_category" type="text" name="category">
-                        <input id="form_field_horarios" type="text" name="horarios">
-                        <input id="form_field_type" type="text" name="type">
-                        <button class="form_submit" class="btn blue" type="submit">Enviar</button>
-                        <!-- EDIT FORM -->
-                        <!-- <section id="edit_info_form">
+                <div id="form" class="field">
+                    <div id="form_wrapper">
+                        <form id="form_main">
+                            <input class="input" id="form_field_id" type="hidden" name="id">
+                            <div class="control">
+                                <input id="form_field_lat" class="input" type="text" placeholder="Latitud" name="lat">
+                            </div>
+                            <div class="control">
+                                <input id="form_field_lng" class="input" type="text" placeholder="Longitud" name="lng">
+                            </div>
+                            <div class="control">
+                                <input class="input" id="form_field_name" placeholder="Nombre" type="text" name="name">
+                            </div>
+                            <div class="control">
+                                <input id="form_field_description" class="input" type="text" placeholder="Descripción"
+                                    name="description">
+                            </div>
+                            <div class="control">
+                                <input id="form_field_address" class="input" type="text" placeholder="Dirección"
+                                    name="address">
+                            </div>
+                            <div class="control">
+                                <input id="form_field_category" class="input" type="text" placeholder="Categoría"
+                                    name="category">
+                            </div>
+                            <div class="control">
+                                <input id="form_field_horarios" class="input" type="text" placeholder="Horarios"
+                                    name="horarios">
+                            </div>
+                            <div class="control">
+                                <input id="form_field_type" class="input" type="text" placeholder="Tipo de Comercio"
+                                    name="type">
+                            </div>
+                            <button class="form_submit" class="btn blue" type="submit">Enviar</button>
+                            <!-- EDIT FORM -->
+                            <!-- <section id="edit_info_form">
                             <div id="form" class="field">
                                 <label class="label">Librería</label>
                                 <div class="control">
@@ -115,13 +137,13 @@
                                 </div>
                             </div>
                         </section> -->
-                    </form>
-                </div>
-                <div id="btn_add_wrapper">
-                    <a href="#" class="btn blue">Buscar</a>
-                </div>
-                <div id="list">
-                    <!-- <div class="item">
+                        </form>
+                    </div>
+                    <div id="btn_add_wrapper">
+                        <a href="#" class="btn blue">Buscar</a>
+                    </div>
+                    <div id="list">
+                        <!-- <div class="item">
                         <div class="list_content">
                             <h2>Título1</h2>
                         </div>
@@ -130,6 +152,7 @@
                             <a href="#" class="btn red">Eliminar</a>
                         </div>
                     </div> -->
+                    </div>
                 </div>
             </div>
         </div>
