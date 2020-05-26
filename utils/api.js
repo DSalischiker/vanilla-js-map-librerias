@@ -1,4 +1,5 @@
-const baseUrl = "http://localhost:3000/";
+/* const baseUrl = "http://localhost:3000/"; */
+const baseUrl = "https://librerias-api-rest.now.sh/";
 
 const apiHeaders = {
     'Content-Type': 'application/json',
@@ -18,9 +19,22 @@ const fetchParams = (method, data = '') => {
 }
 
 const api = {
-    //GET
+    //CRUD FUNCTIONS
+    //CREATE
+    createLibrerias: async formData => {
+        const dataResponse = await fetch(baseUrl + 'librerias_caba', fetchParams('POST', formData));
+        const dataInfo = await dataResponse.json();
+        return dataInfo;
+    },
+    //READ
     getLibrerias: async () => {
         const dataResponse = await fetch(baseUrl + 'librerias_caba', fetchParams('GET'));
+        const dataInfo = await dataResponse.json();
+        return dataInfo;
+    },
+    //UPDATE
+    updateLibrerias: async (formData, id) => {
+        const dataResponse = await fetch(baseUrl + 'libreria/' + id, fetchParams('PUT', formData));
         const dataInfo = await dataResponse.json();
         return dataInfo;
     },
@@ -30,7 +44,4 @@ const api = {
         const dataInfo = await dataResponse.json();
         return dataInfo;
     }
-    //PUT
-
-    //POST
 };
