@@ -84,6 +84,7 @@ const handleClickEdit = async () => {
 //Complete form with element clicked
 const completeForm = (reg) => {
     const {
+        _id,
         lat,
         lng,
         name,
@@ -93,6 +94,7 @@ const completeForm = (reg) => {
         horarios,
         type
     } = reg;
+    $form_field_id.value = _id;
     $form_field_lat.value = lat;
     $form_field_lng.value = lng;
     $form_field_name.value = name;
@@ -101,7 +103,7 @@ const completeForm = (reg) => {
     $form_field_category.value = category;
     $form_field_horarios.value = horarios;
     $form_field_type.value = type;
-
+    console.log(reg);
 };
 
 //CREATE
@@ -125,7 +127,13 @@ $form_main.addEventListener('submit', (event) => {
         "horarios": $form_field_horarios.value,
         "type": $form_field_type.value,
     };
-    updateLibreria(formData, id);
+    console.log("tirando update");
+    if (id == '') {
+        createLibreria(formData);
+    } else {
+        updateLibreria(formData, id);
+    }
+
 
     //To be continued...
     //Buscando usar el mismo form cuando hace update o create.

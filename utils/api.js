@@ -34,6 +34,7 @@ const api = {
     },
     //UPDATE
     updateLibrerias: async (formData, id) => {
+        console.log('id llegó así: ' + id);
         const dataResponse = await fetch(baseUrl + 'libreria/' + id, fetchParams('PUT', formData));
         const dataInfo = await dataResponse.json();
         return dataInfo;
