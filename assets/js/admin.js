@@ -49,8 +49,8 @@ const dataRow = props => {
                     <h2>${name}</h2>
                 </div>
                     <div class="btn_wrapper">
-                        <a href="#" data-id="${_id}" class="btn green handleEdit">Editar</a>
-                        <a href="#" data-id="${_id}" class="btn red handleDelete">Eliminar</a>
+                        <a href="#" data-id="${_id}" class="btn button is-link is-light handleEdit">Editar</a>
+                        <a href="#" data-id="${_id}" class="btn button is-danger is-light handleDelete">Eliminar</a>
                     </div>
             </div>`;
 }

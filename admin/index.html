@@ -44,10 +44,12 @@
                         <form id="form_main">
                             <input class="input" id="form_field_id" type="hidden" name="id">
                             <div class="control">
-                                <input id="form_field_lat" class="input" type="text" placeholder="Latitud" name="lat">
+                                <input id="form_field_lat" class="input" type="text" placeholder="Latitud (ej: nn.nnnn)"
+                                    name="lat">
                             </div>
                             <div class="control">
-                                <input id="form_field_lng" class="input" type="text" placeholder="Longitud" name="lng">
+                                <input id="form_field_lng" class="input" type="text"
+                                    placeholder="Longitud (ej: nn.nnnn)" name="lng">
                             </div>
                             <div class="control">
                                 <input class="input" id="form_field_name" placeholder="Nombre" type="text" name="name">
@@ -61,18 +63,21 @@
                                     name="address">
                             </div>
                             <div class="control">
-                                <input id="form_field_category" class="input" type="text" placeholder="Categoría"
-                                    name="category">
+                                <input id="form_field_category" class="input" type="text"
+                                    placeholder="Categoría (Independiente/Comercial)" name="category">
                             </div>
                             <div class="control">
-                                <input id="form_field_horarios" class="input" type="text" placeholder="Horarios"
-                                    name="horarios">
+                                <input id="form_field_horarios" class="input" type="text"
+                                    placeholder="Horarios (ej: hh:mm-hh:mm)" name="horarios">
                             </div>
                             <div class="control">
-                                <input id="form_field_type" class="input" type="text" placeholder="Tipo de Comercio"
-                                    name="type">
+                                <input id="form_field_type" class="input" type="text"
+                                    placeholder="Tipo de Comercio  (ej: Librería y Café)" name="type">
                             </div>
-                            <button class="form_submit" class="btn blue" type="submit">Enviar</button>
+                            <div class="buttons">
+                                <button class="form_submit btn button is-primary" type="submit">Enviar</button>
+                            </div>
+                            <!-- <button class="form_submit" class="btn blue" type="submit">Enviar</button> -->
                             <!-- EDIT FORM -->
                             <!-- <section id="edit_info_form">
                             <div id="form" class="field">

@@ -234,9 +234,20 @@ body {
 
 #form_main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .control {
     width: 50%;
+    padding: 0.3em;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.buttons .button {
+    width: 80%;
+    margin: 0 auto;
 }
