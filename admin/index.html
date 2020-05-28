@@ -71,46 +71,97 @@
                     <!-- Content ... -->
                     <div id="form_wrapper">
                         <form id="form_main">
-                            <input class="input" id="form_field_id" type="hidden" name="id">
-                            <div class="control">
-                                <label class="label">Librería</label>
-                                <input class="input" id="form_field_name" placeholder="Nombre" type="text" name="name">
+                            <div style="width: 100%;">
+                                <input class="input" id="form_field_id" type="hidden" name="id">
+                                <div class="control">
+                                    <label class="label">Librería</label>
+                                    <p class="control has-icons-left" style="width: 100%; padding: 0;">
+                                        <input class="input" id="form_field_name" placeholder="¿Cómo se llama?"
+                                            type="text" name="name">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-book"></i>
+                                        </span>
+                                    </p>
+                                </div>
                             </div>
                             <div class="control">
                                 <label class="label">Latitud</label>
-                                <input id="form_field_lat" class="input" type="text" placeholder="Latitud (ej: nn.nnnn)"
-                                    name="lat">
+                                <p class="control has-icons-left" style="width: 100%; padding: 0;">
+                                    <input id="form_field_lat" class="input" type="text" placeholder="Ej: -34.4444"
+                                        name="lat">
+                                    <span class="icon is-small is-left">
+                                        <i class="far fa-compass"></i>
+                                    </span>
+                                </p>
+
                             </div>
                             <div class="control">
                                 <label class="label">Longitud</label>
-                                <input id="form_field_lng" class="input" type="text"
-                                    placeholder="Longitud (ej: nn.nnnn)" name="lng">
+                                <p class="control has-icons-left" style="width: 100%; padding: 0;">
+                                    <input id="form_field_lng" class="input" type="text" placeholder="Ej: -58.8888"
+                                        name="lng">
+                                    <span class="icon is-small is-left">
+                                        <i class="far fa-compass"></i>
+                                    </span>
+                                </p>
+
                             </div>
 
-                            <div class="control">
+                            <div class="control" style="width: 100%;">
                                 <label class="label">Descripción</label>
-                                <input id="form_field_description" class="input" type="text" placeholder="Descripción"
-                                    name="description">
+                                <p class="control has-icons-left" style="width: 100%; padding: 0;">
+                                    <input id="form_field_description" class="input" type="text"
+                                        placeholder="¿Qué la caracteriza?" name="description">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-info"></i>
+                                    </span>
+                                </p>
+
                             </div>
                             <div class="control">
                                 <label class="label">Dirección</label>
-                                <input id="form_field_address" class="input" type="text" placeholder="Dirección"
-                                    name="address">
+                                <p class="control has-icons-left" style="width: 100%; padding: 0;">
+                                    <input id="form_field_address" class="input" type="text" placeholder="¿Dónde está?"
+                                        name="address">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                </p>
+
                             </div>
                             <div class="control">
                                 <label class="label">Categoría</label>
-                                <input id="form_field_category" class="input" type="text"
-                                    placeholder="Categoría (Independiente/Comercial)" name="category">
+                                <p class="control has-icons-left" style="width: 100%; padding: 0;">
+                                    <input id="form_field_category" class="input" type="text"
+                                        placeholder="Ej: Independiente/Comercial" name="category">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-tag"></i>
+                                    </span>
+                                </p>
+
                             </div>
                             <div class="control">
                                 <label class="label">Horarios</label>
-                                <input id="form_field_horarios" class="input" type="text"
-                                    placeholder="Horarios (ej: hh:mm-hh:mm)" name="horarios">
+                                <p class="control has-icons-left" style="width: 100%; padding: 0;">
+                                    <input id="form_field_horarios" class="input" type="text"
+                                        placeholder="Ej: hh:mm-hh:mm" name="horarios">
+                                    <span class="icon is-small is-left">
+                                        <i class="far fa-clock"></i>
+                                    </span>
+
+                                </p>
                             </div>
                             <div class="control">
                                 <label class="label">Tipo de comercio</label>
-                                <input id="form_field_type" class="input" type="text"
-                                    placeholder="Tipo de Comercio  (ej: Librería y Café)" name="type">
+                                <p class="control has-icons-left" style="width: 100%; padding: 0;">
+                                    <input id="form_field_type" class="input" type="text"
+                                        placeholder="Ej: Librería y Café | Librería y Disquería" name="type">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-store-alt"></i>
+                                    </span>
+
+                                </p>
+
                             </div>
                             <!-- <div class="buttons">
                                 <button class="form_submit btn button is-primary" type="submit">Enviar</button>
