@@ -10,8 +10,10 @@ const $form_field_category = document.querySelector('#form_field_category');
 const $form_field_horarios = document.querySelector('#form_field_horarios');
 const $form_field_type = document.querySelector('#form_field_type');
 const $form_main = document.querySelector('#form_main');
-
-
+const $form_submit = document.querySelector('.form_submit');
+const $modal = document.querySelector('#modal');
+const $btn_cancel = document.querySelectorAll('.btn-cancel');
+const $btn_add = document.querySelector('#btn_add');
 
 //READ
 const getLibrerias = async (id = '') => {
@@ -80,6 +82,7 @@ const handleClickEdit = async () => {
     const id = event.target.dataset.id;
     const reg = await getLibrerias(id);
     completeForm(reg);
+    $modal.classList.add('is-active');
 }
 //Complete form with element clicked
 const completeForm = (reg) => {
@@ -114,7 +117,7 @@ const createLibreria = async (data) => {
 }
 
 //FORM (Update or Create)
-$form_main.addEventListener('submit', (event) => {
+$form_submit.addEventListener('click', (event) => {
     event.preventDefault();
     const id = $form_field_id.value;
     const formData = {
@@ -141,9 +144,26 @@ $form_main.addEventListener('submit', (event) => {
     //createCerveceria(formData)
 
     //Form Reset
+    $modal.classList.remove('is-active');
     $form_field_id.value = '';
     $form_main.reset();
 });
+/* $btn_cancel.addEventListener('click', function () {
+    $modal.classList.remove('is-active');
+    $form_field_id.value = '';
+    $form_main.reset();
+}); */
+const $btnsCancel = document.querySelectorAll('.btn-cancel');
+$btnsCancel.forEach(element => {
+    element.addEventListener('click', function () {
+        $modal.classList.remove('is-active');
+        $form_field_id.value = '';
+        $form_main.reset();
+    });
+});
+$btn_add.addEventListener('click', function () {
+    $modal.classList.add('is-active');
+})
 /* document.addEventListener('click', async function () {
     event.preventDefault();
     //Handle Delete

@@ -37,118 +37,80 @@
                 </div>
             </div>
         </section>
-        <div id="wrapper">
-            <div class="inner">
-                <div id="form" class="field">
+        <div id="modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Editar librería</p>
+                    <button class="delete btn-cancel" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <!-- Content ... -->
                     <div id="form_wrapper">
                         <form id="form_main">
                             <input class="input" id="form_field_id" type="hidden" name="id">
                             <div class="control">
+                                <label class="label">Librería</label>
+                                <input class="input" id="form_field_name" placeholder="Nombre" type="text" name="name">
+                            </div>
+                            <div class="control">
+                                <label class="label">Latitud</label>
                                 <input id="form_field_lat" class="input" type="text" placeholder="Latitud (ej: nn.nnnn)"
                                     name="lat">
                             </div>
                             <div class="control">
+                                <label class="label">Longitud</label>
                                 <input id="form_field_lng" class="input" type="text"
                                     placeholder="Longitud (ej: nn.nnnn)" name="lng">
                             </div>
+
                             <div class="control">
-                                <input class="input" id="form_field_name" placeholder="Nombre" type="text" name="name">
-                            </div>
-                            <div class="control">
+                                <label class="label">Descripción</label>
                                 <input id="form_field_description" class="input" type="text" placeholder="Descripción"
                                     name="description">
                             </div>
                             <div class="control">
+                                <label class="label">Dirección</label>
                                 <input id="form_field_address" class="input" type="text" placeholder="Dirección"
                                     name="address">
                             </div>
                             <div class="control">
+                                <label class="label">Categoría</label>
                                 <input id="form_field_category" class="input" type="text"
                                     placeholder="Categoría (Independiente/Comercial)" name="category">
                             </div>
                             <div class="control">
+                                <label class="label">Horarios</label>
                                 <input id="form_field_horarios" class="input" type="text"
                                     placeholder="Horarios (ej: hh:mm-hh:mm)" name="horarios">
                             </div>
                             <div class="control">
+                                <label class="label">Tipo de comercio</label>
                                 <input id="form_field_type" class="input" type="text"
                                     placeholder="Tipo de Comercio  (ej: Librería y Café)" name="type">
                             </div>
-                            <div class="buttons">
+                            <!-- <div class="buttons">
                                 <button class="form_submit btn button is-primary" type="submit">Enviar</button>
-                            </div>
-                            <!-- <button class="form_submit" class="btn blue" type="submit">Enviar</button> -->
-                            <!-- EDIT FORM -->
-                            <!-- <section id="edit_info_form">
-                            <div id="form" class="field">
-                                <label class="label">Librería</label>
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="Ingrese el nombre de la librería">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">Tipo de comercio</label>
-                                <div class="control">
-                                    <div class="select">
-                                        <select>
-                                            <option>Seleccione un tipo</option>
-                                            <option>Librería</option>
-                                            <option>Librería y Café</option>
-                                            <option>Librería y Disquería</option>
-                                            <option>Librería, Café y Disquería</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="form" class="field">
-                                <label class="label">Descripción</label>
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="Ingrese una breve descripción">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">Categoría</label>
-                                <div class="control">
-                                    <label class="radio">
-                                        <input type="radio" name="question">
-                                        Independiente
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="question">
-                                        Comercial
-                                    </label>
-                                </div>
-                            </div>
-                            <div id="form" class="field">
-                                <label class="label">Dirección</label>
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="Ingrese la dirección">
-                                </div>
-                            </div>
-                            <div id="form" class="field">
-                                <label class="label">Horarios</label>
-                                <div class="control">
-                                    <input class="input" type="text"
-                                        placeholder="Ingrese los horarios. (Formato: xx:xx - xx:xx)">
-                                </div>
-                            </div>
-
-                            <div class="field is-grouped">
-                                <div class="control">
-                                    <button class="button has-background-dark has-text-white-bis">Modificar</button>
-                                </div>
-                                <div class="control">
-                                    <button class="button has-background-grey-lighter is-light">Cancelar</button>
-                                </div>
-                            </div>
-                        </section> -->
+                            </div> -->
                         </form>
                     </div>
-                    <div id="btn_add_wrapper">
-                        <a href="#" class="btn blue">Buscar</a>
-                    </div>
-                    <div id="list">
-                        <!-- <div class="item">
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success form_submit btn" type="submit">Guardar cambios</button>
+                    <button class="button btn-cancel">Cancel</button>
+                </footer>
+            </div>
+        </div>
+
+        <div id="wrapper">
+            <div class="inner">
+
+
+                <div id="btn_add_wrapper">
+                    <button id="btn_add" class="btn button is-primary">Agregar librería</button>
+                </div>
+                <div id="list">
+                    <!-- <div class="item">
                         <div class="list_content">
                             <h2>Título1</h2>
                         </div>
@@ -157,8 +119,8 @@
                             <a href="#" class="btn red">Eliminar</a>
                         </div>
                     </div> -->
-                    </div>
                 </div>
+
             </div>
         </div>
     </main>
