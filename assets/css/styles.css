@@ -175,16 +175,30 @@ body {
 @media(max-width: 800px) {
     header {
         flex-direction: column;
-        height: 15vh;
+        height: 20vh;
 
     }
 
+    #title {
+        font-size: 20px;
+    }
+
     #h1 {
+        margin: 0;
         justify-content: start;
     }
 
     #menu_container {
-        margin: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #menu {
+        width: 80%;
+    }
+
+    .option {
+        margin: 0 auto;
     }
 }
 
