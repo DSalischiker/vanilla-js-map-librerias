@@ -37,6 +37,22 @@
                 </div>
             </div>
         </section>
+        <div id="modal_warning" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Confirmar</p>
+                    <button class="delete btn-cancel" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    Estás por eliminar una librería, ¿querés continuar?
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="btn-confirm-delete button is-danger">Eliminar</button>
+                    <button class="button btn-cancel">Cancelar</button>
+                </footer>
+            </div>
+        </div>
         <div id="modal" class="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
@@ -97,7 +113,7 @@
                 </section>
                 <footer class="modal-card-foot">
                     <button class="button is-success form_submit btn" type="submit">Guardar cambios</button>
-                    <button class="button btn-cancel">Cancel</button>
+                    <button class="button btn-cancel">Cancelar</button>
                 </footer>
             </div>
         </div>
@@ -107,7 +123,7 @@
 
 
                 <div id="btn_add_wrapper">
-                    <button id="btn_add" class="btn button is-primary">Agregar librería</button>
+                    <button id="btn_add" class="btn button is-success">Agregar librería</button>
                 </div>
                 <div id="list">
                     <!-- <div class="item">

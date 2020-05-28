@@ -11,10 +11,12 @@ const $form_field_horarios = document.querySelector('#form_field_horarios');
 const $form_field_type = document.querySelector('#form_field_type');
 const $form_main = document.querySelector('#form_main');
 const $form_submit = document.querySelector('.form_submit');
+const $all_modals = document.querySelectorAll('.modal');
 const $modal = document.querySelector('#modal');
 const $btn_cancel = document.querySelectorAll('.btn-cancel');
 const $btn_add = document.querySelector('#btn_add');
-
+const $modal_warning = document.querySelector('#modal_warning');
+const $btn_confirm_delete = document.querySelector('.btn-confirm-delete');
 //READ
 const getLibrerias = async (id = '') => {
     const result = await api.getLibrerias();
@@ -68,7 +70,12 @@ const deleteLibreria = async (id) => {
 
 const handleClickDelete = async () => {
     const id = event.target.dataset.id;
-    deleteLibreria(id);
+    $modal_warning.classList.add('is-active');
+    $modal_warning.classList.add('is-active');
+    $btn_confirm_delete.addEventListener('click', function () {
+        deleteLibreria(id);
+        $modal_warning.classList.remove('is-active');
+    });
 }
 
 //UPDATE
@@ -156,9 +163,12 @@ $form_submit.addEventListener('click', (event) => {
 const $btnsCancel = document.querySelectorAll('.btn-cancel');
 $btnsCancel.forEach(element => {
     element.addEventListener('click', function () {
-        $modal.classList.remove('is-active');
-        $form_field_id.value = '';
-        $form_main.reset();
+        $all_modals.forEach(modal => {
+            modal.classList.remove('is-active');
+            $form_field_id.value = '';
+            $form_main.reset();
+        });
+
     });
 });
 $btn_add.addEventListener('click', function () {
