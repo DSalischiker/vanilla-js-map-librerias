@@ -148,23 +148,12 @@ $form_submit.addEventListener('click', (event) => {
         updateLibreria(formData, id);
     }
 
-
-    //To be continued...
-    //Buscando usar el mismo form cuando hace update o create.
-    //Chequear que si el id viene vacio es create, sino es update
-    //createCerveceria(formData)
-
     //Form Reset
-
     $form_field_id.value = '';
     $form_main.reset();
     $modal.classList.remove('is-active');
 });
-/* $btn_cancel.addEventListener('click', function () {
-    $modal.classList.remove('is-active');
-    $form_field_id.value = '';
-    $form_main.reset();
-}); */
+
 const $btnsCancel = document.querySelectorAll('.btn-cancel');
 $btnsCancel.forEach(element => {
     element.addEventListener('click', function () {
@@ -180,22 +169,3 @@ $btnsCancel.forEach(element => {
 $btn_add.addEventListener('click', function () {
     $modal.classList.add('is-active');
 })
-/* document.addEventListener('click', async function () {
-    event.preventDefault();
-    //Handle Delete
-    if (event.target.matches('.handleDelete')) {
-        const id = event.target.dataset.id;
-        console.log('click en Delete', event.target.dataset.id);
-        deleteLibreria(id);
-    }
-
-    //Handle Edit
-    if (event.target.matches('.handleEdit')) {
-        const id = event.target.dataset.id;
-        console.log('click en Edit', id);
-        const reg = await getLibrerias(id);
-        console.log(reg);
-        completeForm(reg);
-        //editLibreria(id)
-    }
-}, false); */
