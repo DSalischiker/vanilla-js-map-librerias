@@ -92,8 +92,8 @@ const updateLibreria = async (data, id) => {
 const handleClickEdit = async () => {
     const id = event.target.dataset.id;
     const reg = await getLibrerias(id);
-    completeForm(reg);
     $modal.classList.add('is-active');
+    completeForm(reg);
 }
 //Complete form with element clicked
 const completeForm = (reg) => {
