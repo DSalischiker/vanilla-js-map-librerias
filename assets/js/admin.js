@@ -38,7 +38,7 @@ const getLibrerias = async (id = '') => {
         });
     } else {
         //Cuando la llamo con un id desde edit
-        const elementById = result.find(el => id == el._id);
+        const elementById = result.find(el => _id == el._id);
         return elementById;
     }
 }
