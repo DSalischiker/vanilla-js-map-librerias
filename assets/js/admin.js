@@ -169,9 +169,10 @@ const $btnsCancel = document.querySelectorAll('.btn-cancel');
 $btnsCancel.forEach(element => {
     element.addEventListener('click', function () {
         $all_modals.forEach(modal => {
-            modal.classList.remove('is-active');
+
             $form_field_id.value = '';
             $form_main.reset();
+            modal.classList.remove('is-active');
         });
 
     });
