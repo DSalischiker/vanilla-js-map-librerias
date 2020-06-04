@@ -91,7 +91,7 @@ const updateLibreria = async (data, id) => {
 
 const handleClickEdit = async () => {
     const id = event.target.dataset.id;
-    var reg = await getLibrerias(id);
+    const reg = await getLibrerias(id);
     $modal.classList.add('is-active');
     completeForm(reg);
 }
@@ -155,9 +155,10 @@ $form_submit.addEventListener('click', (event) => {
     //createCerveceria(formData)
 
     //Form Reset
-    $modal.classList.remove('is-active');
+
     $form_field_id.value = '';
     $form_main.reset();
+    $modal.classList.remove('is-active');
 });
 /* $btn_cancel.addEventListener('click', function () {
     $modal.classList.remove('is-active');
