@@ -92,15 +92,13 @@ const updateLibreria = async (data, id) => {
 const handleClickEdit = async () => {
     const id = event.target.dataset.id;
     const reg = await getLibrerias(id);
-
-    completeForm(reg);
     $modal.classList.add('is-active');
+    completeForm(reg);
 }
 //Complete form with element clicked
 const completeForm = (reg) => {
-    $form_field_id.value = reg;
     const {
-
+        _id,
         lat,
         lng,
         name,
@@ -109,8 +107,8 @@ const completeForm = (reg) => {
         category,
         horarios,
         type
-    } = reg;
-    /* $form_field_id.value = _id; */
+    } = element;
+    $form_field_id.value = _id;
     $form_field_lat.value = lat;
     $form_field_lng.value = lng;
     $form_field_name.value = name;
@@ -119,7 +117,7 @@ const completeForm = (reg) => {
     $form_field_category.value = category;
     $form_field_horarios.value = horarios;
     $form_field_type.value = type;
-    console.log(reg);
+    console.log(element);
 };
 
 //CREATE
