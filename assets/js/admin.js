@@ -53,12 +53,12 @@ const dataRow = props => {
                     <h2>${name}</h2>
                 </div>
                     <div class="btn_wrapper">
-                        <a href="#" data-id="${_id}" class="btn button is-link is-light handleEdit"><span class="icon is-small">
-                        <i class="fas fa-edit"></i>
-                    </span><span>Editar</span></a>
-                        <a href="#" data-id="${_id}" class="btn button is-danger is-light handleDelete"><span class="icon is-small">
-                        <i class="fas fa-trash-alt"></i>
-                    </span><span>Eliminar</span></a>
+                        <a href="#" data-id="${_id}" class="btn button is-link is-light handleEdit"><span class="handleEdit icon is-small" data-id="${_id}">
+                        <i class="handleEdit fas fa-edit" data-id="${_id}"></i>
+                    </span><span data-id="${_id}" class="handleEdit">Editar</span></a>
+                        <a href="#" data-id="${_id}" class="btn button is-danger is-light handleDelete"><span class="handleDelete icon is-small" data-id="${_id}">
+                        <i class="handleDelete fas fa-trash-alt" data-id="${_id}"></i>
+                    </span><span data-id="${_id}" class="handleDelete">Eliminar</span></a>
                     </div>
             </div>`;
 }
@@ -67,13 +67,16 @@ getLibrerias();
 
 //DELETE
 const deleteLibreria = async (id) => {
+    console.log("2", id);
     const result = await api.deleteLibrerias(id);
     console.log('Deleted', result);
     getLibrerias();
 }
 
 const handleClickDelete = async () => {
+    console.log(event.target);
     const id = event.target.dataset.id;
+    console.log("1", id);
     $modal_warning.classList.add('is-active');
     $modal_warning.classList.add('is-active');
     $btn_confirm_delete.addEventListener('click', function () {
@@ -90,7 +93,9 @@ const updateLibreria = async (data, id) => {
 }
 
 const handleClickEdit = async () => {
+    console.log(event.target);
     const id = event.target.dataset.id;
+    console.log("1edit", id);
     const reg = await getLibrerias(id);
     $modal.classList.add('is-active');
     completeForm(reg);
